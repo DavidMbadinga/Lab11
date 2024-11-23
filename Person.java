@@ -4,10 +4,12 @@
  * Author: David Mbadinga
  * Last modified: Nov 23, 2024
  */ 
+import java.io.Serializable;
 import java.text.NumberFormat;
 import java.util.Locale;
+public class Person implements Comparable<Person>, Serializable {
+    private static final long serialVersionUID = 1L; // Recommended for Serializable classes
 
-public class Person implements Comparable<Person> {
     private int age;
     private String name;
     private String address;
